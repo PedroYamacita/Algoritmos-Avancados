@@ -4,7 +4,7 @@ def resolver_comando(comando, comandos):
     if comando == "DIREITA":
         return 1
     if comando.startswith("REPETE "):
-        _, indice = comando.split()
+        a, indice = comando.split()
         indice = int(indice)
         return resolver_comando(comandos[indice], comandos)
     return 0
